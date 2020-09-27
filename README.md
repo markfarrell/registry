@@ -312,10 +312,8 @@ each of these locations a "storage backend".
 
 Clients will need to be pointed at place they can store package tarballs from,
 so here we'll store a mapping between "name of the storage backend" to a function
-that given:
-1. a package name
-2. a package version
-..returns the _URL_ where the tarball for that package version can be fetched.
+that given (1) a package name and (2) a package version then returns the _URL_
+where the tarball for that package version can be fetched.
 
 We maintain the list of all the Storage Backends and the aforementioned mappings
 [here](./v1/backends.dhall).
